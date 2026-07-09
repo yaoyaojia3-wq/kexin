@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>张可欣 | BMS HIL测试工程师</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home"><span>ZX</span> 张可欣</a>
+    <nav>
+      <a href="#summary">概览</a>
+      <a href="#skills">技能</a>
+      <a href="#projects">项目</a>
+      <a href="#contact">联系</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换深浅色">◐</button>
+  </header>
+
+  <main id="home">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">BMS HIL Test Engineer</p>
+        <h1>张可欣</h1>
+        <p class="lead">3年汽车电子测试经验，聚焦新能源BMS HIL测试，熟悉台架仿真、故障注入、CAN报文分析、标定测量与缺陷闭环。</p>
+        <div class="hero-actions">
+          <a class="primary" href="#projects">查看项目</a>
+          <button class="secondary" id="copyPhone" type="button">复制电话</button>
+        </div>
+        <div class="quick-facts">
+          <span>女</span><span>2001.03</span><span>中共党员</span><span>CET-4</span><span>C1驾照</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/resume-visual.png" alt="柔和风格的个人简历视觉图" />
+        <div class="floating-card"><strong>近期项目</strong><span>星海 X5 / 星海 S7</span></div>
+      </div>
+    </section>
+
+    <section id="summary" class="section summary-grid">
+      <article class="panel">
+        <h2>个人概览</h2>
+        <p>本科软件工程背景，现任BMS HIL测试方向。能够根据BMS需求提取测试点，编写并执行覆盖正常、边界、异常及故障注入的测试用例；熟悉VeriStand台架、CANoe Trace分析、CANape/XCP测量标定、MATLAB/Simulink仿真模型配合及缺陷闭环。</p>
+      </article>
+      <article class="panel metric-panel">
+        <button class="metric active" data-metric="cases"><b>320+</b><span>维护/编写用例</span></button>
+        <button class="metric" data-metric="bugs"><b>100+</b><span>累计缺陷跟踪</span></button>
+        <button class="metric" data-metric="projects"><b>2</b><span>BMS HIL整车项目</span></button>
+        <p id="metricText">覆盖星海X5、星海S7项目的BMS功能、故障和热管理相关验证。</p>
+      </article>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Skill Set</p>
+        <h2>核心技能</h2>
+      </div>
+      <div class="skill-tabs">
+        <button class="tab active" data-tab="hil" type="button">HIL测试</button>
+        <button class="tab" data-tab="tools" type="button">工具链</button>
+        <button class="tab" data-tab="diag" type="button">诊断与通信</button>
+        <button class="tab" data-tab="soft" type="button">效率与协作</button>
+      </div>
+      <div class="skill-content panel" id="skillContent"></div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Experience</p>
+        <h2>项目经历</h2>
+      </div>
+      <div class="project-filter">
+        <button class="filter active" data-filter="all" type="button">全部</button>
+        <button class="filter" data-filter="x5" type="button">星海 X5</button>
+        <button class="filter" data-filter="s7" type="button">星海 S7</button>
+      </div>
+      <div class="timeline">
+        <article class="project-card" data-project="x5">
+          <div class="time">2025.03 - 2026.06</div>
+          <div class="project-body">
+            <h3>东风风行星海 X5（C903）BMS HIL测试</h3>
+            <p class="project-desc">面向星海X5电池管理系统开展硬件在环验证，通过HIL台架仿真电池、电压、电流、温度、充电及异常故障信号，验证BMS采集、逻辑控制、故障判断、热管理和充电相关功能。</p>
+            <ul>
+              <li>基于项目需求提取测试点，编写和维护BMS测试用例，覆盖功能、边界、异常及回归场景。</li>
+              <li>开展BMS故障诊断模拟，验证故障识别、报文上报、故障存储、清除及安全保护逻辑。</li>
+              <li>执行热管理、热失控预警、直流充电HIL测试，关注温控策略、CC/CP及充电状态流转。</li>
+              <li>使用CANoe采集CAN Trace并解析DBC信号，定位状态跳转、继电器、报警及报文逻辑问题。</li>
+              <li>使用CANape结合XCP进行在线测量和标定，配合MATLAB处理测试数据并支持策略调试。</li>
+            </ul>
+            <div class="result">成果：输出120+ HIL测试用例，累计发现60+ BUG，完成回归复测，问题闭环率100%。</div>
+          </div>
+        </article>
+        <article class="project-card" data-project="s7">
+          <div class="time">2023.11 - 2025.03</div>
+          <div class="project-body">
+            <h3>东风风行星海 S7（C907）BMS HIL测试</h3>
+            <p class="project-desc">负责星海S7 BMS专项测试，基于HIL台架验证高压上下电、休眠唤醒、充电状态、热管理、SOH及故障处理策略，保障电池系统稳定安全运行。</p>
+            <ul>
+              <li>验证高压上下电流程，模拟预充、正常上电、正常下电、故障下电等状态，核对继电器动作与时序。</li>
+              <li>模拟A+、KL15、AC12V等唤醒信号，验证休眠唤醒逻辑、响应状态及网络报文表现。</li>
+              <li>执行充电状态与故障注入测试，覆盖CC2断线、NM报文丢失、保护动作和状态跳转。</li>
+              <li>维护温控仿真工况，覆盖行车冷却、快充冷却等场景，验证水温、水泵和温控策略响应。</li>
+              <li>记录每日测试日志，在缺陷平台提交问题并跟踪修复版本的回归验证。</li>
+            </ul>
+            <div class="result">成果：维护200+标准测试用例，推动40+问题闭环，输出6份阶段性测试报告。</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section education-contact" id="contact">
+      <article class="panel">
+        <h2>教育背景</h2>
+        <p><strong>2020.09 - 2024.06</strong>　本科学历｜软件工程</p>
+        <p>主修：SQL数据库、Linux操作系统、Web前端开发、Java程序设计、软件工程专业英语等。</p>
+      </article>
+      <article class="panel contact-card">
+        <h2>联系方式</h2>
+        <p>手机：<button class="inline-copy" data-copy="18174239652" type="button">18174239652</button></p>
+        <p>邮箱：<button class="inline-copy" data-copy="18174239652@163.com" type="button">18174239652@163.com</button></p>
+        <p class="note" id="copyNote">点击号码或邮箱可复制。</p>
+      </article>
+    </section>
+  </main>
+
+  <button class="back-top" id="backTop" type="button" aria-label="回到顶部">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
